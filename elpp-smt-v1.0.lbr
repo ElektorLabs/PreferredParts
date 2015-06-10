@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1970,11 +1970,26 @@ Non polarised, X1/Y1 type</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name="0.47UF"><attribute name="FARNELL" value="1672487" constant="no"/><attribute name="RS" value="538-2313" constant="no"/></technology>
-<technology name="1UF"><attribute name="FARNELL" value="2333002" constant="no"/><attribute name="RS" value="648-0698" constant="no"/></technology>
-<technology name="2.2UF"><attribute name="FARNELL" value="2333012" constant="no"/><attribute name="RS" value="464-9104" constant="no"/></technology>
-<technology name="4.7UF"><attribute name="FARNELL" value="2333019" constant="no"/><attribute name="RS" value="538-2341" constant="no"/></technology>
-<technology name="10UF"><attribute name="FARNELL" value="1432339" constant="no"/><attribute name="RS" value="801-5441" constant="no"/></technology>
+<technology name="0.47UF">
+<attribute name="FARNELL" value="1672487" constant="no"/>
+<attribute name="RS" value="538-2313" constant="no"/>
+</technology>
+<technology name="10UF">
+<attribute name="FARNELL" value="1432339" constant="no"/>
+<attribute name="RS" value="801-5441" constant="no"/>
+</technology>
+<technology name="1UF">
+<attribute name="FARNELL" value="2333002" constant="no"/>
+<attribute name="RS" value="648-0698" constant="no"/>
+</technology>
+<technology name="2.2UF">
+<attribute name="FARNELL" value="2333012" constant="no"/>
+<attribute name="RS" value="464-9104" constant="no"/>
+</technology>
+<technology name="4.7UF">
+<attribute name="FARNELL" value="2333019" constant="no"/>
+<attribute name="RS" value="538-2341" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="CASE-B" package="ELPP-CP-CASE-B">
@@ -1983,7 +1998,10 @@ Non polarised, X1/Y1 type</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name="22UF"><attribute name="FARNELL" value="197294" constant="no"/><attribute name="RS" value="801-5451" constant="no"/></technology>
+<technology name="22UF">
+<attribute name="FARNELL" value="197294" constant="no"/>
+<attribute name="RS" value="801-5451" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="CASE-C" package="ELPP-CP-CASE-C">
@@ -1992,8 +2010,14 @@ Non polarised, X1/Y1 type</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name="47UF"><attribute name="FARNELL" value="197324" constant="no"/><attribute name="RS" value="801-5460" constant="no"/></technology>
-<technology name="100UF"><attribute name="FARNELL" value="1793885" constant="no"/><attribute name="RS" value="801-5476" constant="no"/></technology>
+<technology name="100UF">
+<attribute name="FARNELL" value="1793885" constant="no"/>
+<attribute name="RS" value="801-5476" constant="no"/>
+</technology>
+<technology name="47UF">
+<attribute name="FARNELL" value="197324" constant="no"/>
+<attribute name="RS" value="801-5460" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="8MM" package="ELPP-CP-080-083">
@@ -2679,6 +2703,10 @@ Non polarised, X1/Y1 type</description>
 <attribute name="FARNELL" value="9490043" constant="no"/>
 <attribute name="RS" value="5343481" constant="no"/>
 </technology>
+<technology name="TS922IDT">
+<attribute name="FARNELL" value="1642724" constant="no"/>
+<attribute name="RS" value="7141142" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2727,7 +2755,7 @@ Non polarised, X1/Y1 type</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="P-TRIMMER-*-" prefix="P" uservalue="yes">
+<deviceset name="P-TRIMMER-*-" prefix="P">
 <description>&lt;b&gt;Resistor&lt;/b&gt;, adjustable</description>
 <gates>
 <gate name="1" symbol="TRIMMER" x="5.08" y="0"/>
@@ -2768,7 +2796,7 @@ Non polarised, X1/Y1 type</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DI-*-" prefix="DI" uservalue="yes">
+<deviceset name="DI-*-" prefix="DI">
 <description>&lt;b&gt;DIAC&lt;/b&gt;</description>
 <gates>
 <gate name="-B1" symbol="DIAC" x="0" y="0"/>
@@ -3183,7 +3211,7 @@ Non polarised, X1/Y1 type</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="S-TACTILE-6X6-" prefix="S" uservalue="yes">
+<deviceset name="S-TACTILE-6X6-" prefix="S">
 <description>&lt;b&gt;Tactile switch&lt;/b&gt;, pushbutton, 6x6 mm, gull wing.</description>
 <gates>
 <gate name="S" symbol="SWITCH-MOMENTARY" x="0" y="0"/>

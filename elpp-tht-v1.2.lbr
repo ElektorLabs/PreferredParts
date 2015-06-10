@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -17600,9 +17600,9 @@ Non polarised, X1/Y1 type</description>
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="4.318" width="0.1524" layer="94"/>
 <text x="1.016" y="6.096" size="1.778" layer="95">&gt;NAME</text>
 <text x="0.889" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1A" x="-2.54" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="1S" x="2.54" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="1E" x="-2.54" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="1A" x="-2.54" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1S" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1E" x="-2.54" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
 <polygon width="0.254" layer="94">
 <vertex x="-0.9525" y="0"/>
 <vertex x="0" y="-0.9525"/>
@@ -19518,15 +19518,15 @@ Non polarised, X1/Y1 type</description>
 <text x="-7.62" y="13.97" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="11.43" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="-7.493" y1="-1.397" x2="-6.096" y2="3.937" layer="94"/>
-<pin name="1" x="7.62" y="-10.16" visible="off" length="short" direction="sup" rot="R180"/>
-<pin name="2" x="7.62" y="0" visible="off" length="short" direction="sup" rot="R180"/>
-<pin name="3" x="7.62" y="2.54" visible="off" length="short" direction="sup" rot="R180"/>
-<pin name="4" x="7.62" y="5.08" visible="off" length="short" direction="sup" rot="R180"/>
-<pin name="5" x="7.62" y="7.62" visible="off" length="short" direction="sup" rot="R180"/>
-<pin name="6" x="7.62" y="10.16" visible="off" length="short" direction="sup" rot="R180"/>
-<pin name="7" x="7.62" y="-2.54" visible="off" length="short" direction="sup" rot="R180"/>
-<pin name="8" x="7.62" y="-5.08" visible="off" length="short" direction="sup" rot="R180"/>
-<pin name="9" x="7.62" y="-7.62" visible="off" length="short" direction="sup" rot="R180"/>
+<pin name="1" x="7.62" y="-10.16" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="7.62" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="7.62" y="5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="5" x="7.62" y="7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="6" x="7.62" y="10.16" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="7" x="7.62" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="8" x="7.62" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="9" x="7.62" y="-7.62" visible="off" length="short" direction="pas" rot="R180"/>
 <wire x1="5.08" y1="-2.54" x2="2.667" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="2.667" y1="-2.54" x2="2.667" y2="-4.826" width="0.1524" layer="94"/>
 <wire x1="2.667" y1="-4.826" x2="2.921" y2="-4.064" width="0.254" layer="94"/>
@@ -20067,7 +20067,7 @@ Suitable for flat (slotted) and round pin models
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-SUBD-9-" prefix="K" uservalue="yes">
+<deviceset name="K-SUBD-9-" prefix="K">
 <description>&lt;b&gt;Connector&lt;/b&gt;, sub-d
 </description>
 <gates>
@@ -20711,7 +20711,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="P-TRIMMER-*-" prefix="P" uservalue="yes">
+<deviceset name="P-TRIMMER-*-" prefix="P">
 <description>&lt;b&gt;Resistor&lt;/b&gt;, adjustable</description>
 <gates>
 <gate name="1" symbol="TRIMMER" x="5.08" y="0"/>
@@ -20752,7 +20752,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DI-*-" prefix="DI" uservalue="yes">
+<deviceset name="DI-*-" prefix="DI">
 <description>&lt;b&gt;DIAC&lt;/b&gt;</description>
 <gates>
 <gate name="-B1" symbol="DIAC" x="0" y="0"/>
@@ -20917,8 +20917,8 @@ Tandem carbon potentiometer, 16 mm</description>
 </connects>
 <technologies>
 <technology name="BC327">
-<attribute name="FARNELL" value="9558489" constant="no"/>
-<attribute name="RS" value="463072" constant="no"/>
+<attribute name="FARNELL" value="2464073" constant="no"/>
+<attribute name="RS" value="8009566" constant="no"/>
 </technology>
 <technology name="BC557C">
 <attribute name="FARNELL" value="2317549" constant="no"/>
@@ -21157,7 +21157,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="F-FUSE-HOLDER-" prefix="K" uservalue="yes">
+<deviceset name="F-FUSE-HOLDER-" prefix="K">
 <description>&lt;b&gt;FUSE HOLDER&lt;/b&gt;&lt;p&gt; grid 22.5mm, isolated cap&lt;p&gt; Schurter, 0031 8201</description>
 <gates>
 <gate name="G$1" symbol="FUSE-HOLDER-20X5" x="0" y="0"/>
@@ -21178,7 +21178,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="F-FUSE-" prefix="F" uservalue="yes">
+<deviceset name="F-FUSE-" prefix="F">
 <description>&lt;b&gt;FUSE as BOM item&lt;/b&gt;&lt;p&gt;No leads, add &lt;u&gt;one&lt;/u&gt; fuse holder or &lt;u&gt;two&lt;/u&gt; fuse clips for fuse leads&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
@@ -21222,7 +21222,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X1-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X1-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X1" x="0" y="0"/>
@@ -21252,7 +21252,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X2-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X2-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X2" x="0" y="0"/>
@@ -21284,7 +21284,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X3-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X3-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X3" x="0" y="0"/>
@@ -21318,7 +21318,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X4-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X4-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X4" x="0" y="0"/>
@@ -21354,7 +21354,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X5-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X5-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X5" x="0" y="0"/>
@@ -21392,7 +21392,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X6-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X6-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X6" x="0" y="0"/>
@@ -21432,7 +21432,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X7-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X7-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X7" x="0" y="0"/>
@@ -21474,7 +21474,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X8-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X8-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X8" x="0" y="0"/>
@@ -21518,7 +21518,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X9-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X9-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X9" x="0" y="0"/>
@@ -21564,7 +21564,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X10-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X10-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X10" x="0" y="0"/>
@@ -21612,7 +21612,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X11-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X11-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X11" x="0" y="0"/>
@@ -21662,7 +21662,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X12-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X12-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X12" x="0" y="0"/>
@@ -21714,7 +21714,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X13-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X13-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X13" x="0" y="0"/>
@@ -21768,7 +21768,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X14-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X14-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X14" x="0" y="0"/>
@@ -21824,7 +21824,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X15-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X15-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X15" x="0" y="0"/>
@@ -21882,7 +21882,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-1X16-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-1X16-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-MALE-1X16" x="0" y="0"/>
@@ -21942,7 +21942,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X1-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X1-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X1" x="0" y="0"/>
@@ -21972,7 +21972,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X2-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X2-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X2" x="0" y="0"/>
@@ -22004,7 +22004,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X3-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X3-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X3" x="0" y="0"/>
@@ -22038,7 +22038,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X4-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X4-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X4" x="0" y="0"/>
@@ -22074,7 +22074,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X5-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X5-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X5" x="0" y="0"/>
@@ -22112,7 +22112,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X6-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X6-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X6" x="0" y="0"/>
@@ -22152,7 +22152,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X7-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X7-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X7" x="0" y="0"/>
@@ -22194,7 +22194,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X8-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X8-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X8" x="0" y="0"/>
@@ -22238,7 +22238,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X9-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X9-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X9" x="0" y="0"/>
@@ -22284,7 +22284,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X10-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X10-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X10" x="0" y="0"/>
@@ -22332,7 +22332,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X11-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X11-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X11" x="0" y="0"/>
@@ -22382,7 +22382,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X12-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X12-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X12" x="0" y="0"/>
@@ -22434,7 +22434,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X13-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X13-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X13" x="0" y="0"/>
@@ -22488,7 +22488,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X14-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X14-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X14" x="0" y="0"/>
@@ -22544,7 +22544,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X15-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X15-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X15" x="0" y="0"/>
@@ -22602,7 +22602,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-1X16-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-1X16-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-1X16" x="0" y="0"/>
@@ -22662,7 +22662,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-2X1-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-2X1-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; 2 rows, 90 degrees</description>
 <gates>
 <gate name="1" symbol="HEADER-MALE-2X1" x="0" y="0"/>
@@ -22694,7 +22694,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-2X2-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-2X2-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; 2 rows, 90 degrees</description>
 <gates>
 <gate name="1" symbol="HEADER-MALE-2X2" x="0" y="0"/>
@@ -22730,7 +22730,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-2X3-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-2X3-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; 2 rows, 90 degrees</description>
 <gates>
 <gate name="1" symbol="HEADER-MALE-2X3" x="0" y="0"/>
@@ -22770,7 +22770,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-2X4-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-2X4-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; 2 rows, 90 degrees</description>
 <gates>
 <gate name="1" symbol="HEADER-MALE-2X4" x="0" y="0"/>
@@ -22814,7 +22814,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-2X5-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-2X5-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; 2 rows, 90 degrees</description>
 <gates>
 <gate name="1" symbol="HEADER-MALE-2X5" x="0" y="0"/>
@@ -22862,7 +22862,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-2X6-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-2X6-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; 2 rows, 90 degrees</description>
 <gates>
 <gate name="1" symbol="HEADER-MALE-2X6" x="0" y="0"/>
@@ -22914,7 +22914,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-2X7-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-2X7-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; 2 rows, 90 degrees</description>
 <gates>
 <gate name="1" symbol="HEADER-MALE-2X7" x="0" y="0"/>
@@ -22970,7 +22970,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-2X8-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-2X8-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; 2 rows, 90 degrees</description>
 <gates>
 <gate name="1" symbol="HEADER-MALE-2X8" x="0" y="0"/>
@@ -23030,7 +23030,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-2X9-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-2X9-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; 2 rows, 90 degrees</description>
 <gates>
 <gate name="1" symbol="HEADER-MALE-2X9" x="0" y="0"/>
@@ -23094,7 +23094,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-MALE-2X10-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-MALE-2X10-" prefix="K">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; 2 rows, 90 degrees</description>
 <gates>
 <gate name="1" symbol="HEADER-MALE-2X10" x="0" y="0"/>
@@ -23162,7 +23162,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-2X1-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-2X1-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;, 2 rows</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-2X1" x="0" y="0"/>
@@ -23182,7 +23182,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-2X2-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-2X2-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;, 2 rows</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-2X2" x="0" y="0"/>
@@ -23204,7 +23204,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-2X3-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-2X3-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;, 2 rows</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-2X3" x="0" y="0"/>
@@ -23228,7 +23228,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-2X4-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-2X4-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;, 2 rows</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-2X4" x="0" y="0"/>
@@ -23254,7 +23254,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-2X5-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-2X5-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;, 2 rows</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-2X5" x="0" y="0"/>
@@ -23282,7 +23282,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-2X6-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-2X6-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;, 2 rows</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-2X6" x="0" y="0"/>
@@ -23312,7 +23312,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-2X7-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-2X7-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;, 2 rows</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-2X7" x="0" y="0"/>
@@ -23344,7 +23344,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-2X8-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-2X8-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;, 2 rows</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-2X8" x="0" y="0"/>
@@ -23378,7 +23378,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-2X9-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-2X9-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;, 2 rows</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-2X9" x="0" y="0"/>
@@ -23414,7 +23414,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="K-HEADER-FEMALE-2X10-" prefix="K" uservalue="yes">
+<deviceset name="K-HEADER-FEMALE-2X10-" prefix="K">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;, 2 rows</description>
 <gates>
 <gate name="G$1" symbol="HEADER-FEMALE-2X10" x="0" y="0"/>
@@ -24255,7 +24255,7 @@ Tandem carbon potentiometer, 16 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="S-TACTILE-6X6-" prefix="S" uservalue="yes">
+<deviceset name="S-TACTILE-6X6-" prefix="S">
 <description>&lt;b&gt;Tactile switch&lt;/b&gt;, pushbutton, 6x6 mm.</description>
 <gates>
 <gate name="S" symbol="SWITCH-MOMENTARY" x="0" y="0"/>

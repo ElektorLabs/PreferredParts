@@ -1,4 +1,4 @@
-This repository is now archived and will get no further updates.
+This repository is now archived and will not be updated.
 
 PreferredParts
 ==============

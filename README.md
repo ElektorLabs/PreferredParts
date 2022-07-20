@@ -1,3 +1,5 @@
+This repository is now archived and will get no further updates.
+
 PreferredParts
 ==============
 
